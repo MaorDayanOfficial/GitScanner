@@ -25,19 +25,3 @@ Links listed here are for websites where the scanner has found an open .git dire
 
 
 ## WARNING: This project is for educational purposes only and intended for good use. Do not use it for unethical purposes!
-```bash
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# WARNING: This project is for educational purposes only and intended for good use. Do not use it for unethical purposes!
