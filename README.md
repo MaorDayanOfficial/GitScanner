@@ -13,7 +13,7 @@ This tool does not exploit it, it was created to scan lists of hundreds / thousa
     
 ## How to run?
 
-1. Add links in the "DomainsToScan" txt file and save it (basiclly can be thousands) and save it
+1. Add links in the "DomainsToScan" txt file and save it (basically can be thousands) and save it
 2. Run the script, it will go one by one until the end of the list.
 
 ## Skipped file?
