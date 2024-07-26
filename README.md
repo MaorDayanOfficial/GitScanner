@@ -1,27 +1,87 @@
+After more then a year today i updated the tool :)
 # GitScanner
-A tool i created over a year ago, for bug hunting or penetration testing that targets (in a good way) websites with publicly accessible .git repositories.
 
-This tool does not exploit it, it was created to scan lists of hundreds / thousands of websites.
+This Python script scans a list of URLs for potential Git source code disclosure vulnerabilities. It's designed to be fast, efficient, and user friendly, providing clear and colorful output in the terminal.
+
+## Features
+
+- Scans multiple URLs concurrently for improved speed
+- Detects common Git repository paths that might be exposed
+- Provides real-time progress updates with color-coded output
+- Saves only vulnerable URLs to a CSV file
+- Supports command-line arguments for flexible usage
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Python 3.6 or higher installed on your system
+- pip
 
 ## Installation
 
-```bash
-  git clone https://github.com/MaorDayanOfficial/GitScanner.git
-  cd GitScanner
-  pip install -r requirements.txt
-```
-    
-## How to run?
+1. Clone this repository to your local machine:
+   ```
+   git clone https://github.com/yourusername/git-source-code-scanner.git
+   cd git-source-code-scanner
+   ```
 
-1. Add links in the "DomainsToScan" txt file and save it (basically can be thousands) and save it
-2. Run the script, it will go one by one until the end of the list.
+2. Install the required Python packages:
+   ```
+   pip install requests colorama
+   ```
 
-## Skipped file?
-Links listed here are for websites that either blocked the scanner or are no longer online, preventing the scanner from connecting and scanning them.
+## Usage
 
-## results file?
-Links listed here are for websites where the scanner has found an open .git directory. Only websites with accessible .git directories will be saved here
+1. Prepare a text file containing the URLs you want to scan, with one URL per line. For example, `urls_to_scan.txt`:
+   ```
+   https://example.com
+   https://anotherexample.com
+   http://testsite.net
+   testsite2.net
+   ```
 
+2. Run the script from the command line:
+   ```
+   python git_scanner.py urls_to_scan.txt
+   ```
 
+3. (Optional) You can specify an output file name and the number of worker threads:
+   ```
+   python git_scanner.py urls_to_scan.txt --output vulnerable_sites.csv --workers 20
+   ```
 
+## Command-line Arguments
+
+- `input_file`: (Required) Path to the text file containing URLs to scan
+- `--output`: (Optional) Name of the CSV file to save vulnerable URLs (default: vulnerable_urls.csv)
+- `--workers`: (Optional) Number of parallel worker threads (default: 10)
+
+## Output
+
+The script provides real-time feedback in the terminal:
+
+- Green text for general information and successful completion
+- Yellow text for progress updates
+- Red text for discovered vulnerabilities
+
+If vulnerabilities are found, they are saved in the specified CSV file (default: vulnerable_urls.csv).
+
+## Contributing
+
+Contributions to improve the script are welcome. Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes and commit them (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Disclaimer
+
+This tool is for educational and ethical testing purposes only. Always ensure you have permission before scanning websites you do not own or operate. The authors are not responsible for any misuse or damage caused by this program.
 ## WARNING: This project is for educational purposes only and intended for good use. Do not use it for unethical purposes!
