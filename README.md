@@ -1,7 +1,7 @@
 After more then a year today i updated the tool :)
 # GitScanner
 
-This Python script scans a list of URLs for potential Git source code disclosure vulnerabilities. It's designed to be fast, efficient, and user friendly, providing clear and colorful output in the terminal.
+This Tool scans a list of URLs for potential Git source code disclosure vulnerabilities. It's designed to be fast, efficient, and user friendly, providing clear and colorful output in the terminal.
 
 ## Features
 
