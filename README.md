@@ -28,7 +28,7 @@ Before you begin, ensure you have met the following requirements:
 
 2. Install the required Python packages:
    ```
-   pip install requests colorama
+   pip install -r requirements.txt
    ```
 
 ## Usage
