@@ -22,8 +22,8 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone this repository to your local machine:
    ```
-   git clone https://github.com/yourusername/git-source-code-scanner.git
-   cd git-source-code-scanner
+   git clone https://github.com/MaorDayanOfficial/GitScanner
+   cd GitScanner
    ```
 
 2. Install the required Python packages:
